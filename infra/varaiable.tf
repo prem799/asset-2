@@ -34,7 +34,18 @@ variable "subnet_ids" {
   type        = list(string)
 }
 
-variable "security_group_id" {
+variable "security_group_ids" {
   description = "Security group IDs"
   type        = list(string)
 }
+
+variable "container_name" {
+  description = "Container name in the task definition"
+  type        = string
+}
+
+variable "container_port" {
+  description = "Container port to expose"
+  type        = number
+}
+
