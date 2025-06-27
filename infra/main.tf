@@ -40,7 +40,7 @@ resource "aws_ecs_service" "this" {
   }
 
   load_balancer {
-    target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:359074990398:targetgroup/mark42/188e427bc89601ad"
+    target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:359074990398:targetgroup/mark45/303a2330d09a5188"
     container_name   = var.container_name
     container_port   = var.container_port
   }
